@@ -1,0 +1,29 @@
+{
+    "name": "eophantasy/http",
+    "description": "Library to send HTTP requests",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Eophantasy\\Http\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Eophantasy\\Http\\Test\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ilya Sitnikov",
+            "email": "sitnikovik@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.5"
+    }
+}
