@@ -4,8 +4,154 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ea68bd7c7e293200d6d54f3fb5b75842",
-    "packages": [],
+    "content-hash": "da38ce935e933e22dd67670806caf79b",
+    "packages": [
+        {
+            "name": "eophantasy/io",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/eophantasy/io.git",
+                "reference": "2a2faee10f1a4591c483fc2178cccdd3476c0c00"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/eophantasy/io/zipball/2a2faee10f1a4591c483fc2178cccdd3476c0c00",
+                "reference": "2a2faee10f1a4591c483fc2178cccdd3476c0c00",
+                "shasum": ""
+            },
+            "require": {
+                "eophantasy/types": "dev-main",
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^11.5"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Eophantasy\\IO\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Eophantasy\\IO\\Test\\": "tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ilya Sitnikov",
+                    "email": "sitnikovik@gmail.com"
+                }
+            ],
+            "description": "The library to work with input and output",
+            "support": {
+                "source": "https://github.com/eophantasy/io/tree/master",
+                "issues": "https://github.com/eophantasy/io/issues"
+            },
+            "time": "2024-12-31T18:30:05+00:00"
+        },
+        {
+            "name": "eophantasy/time",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/eophantasy/time.git",
+                "reference": "531a1fd0e872b7c438a099fb7efe409e1d3620e9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/eophantasy/time/zipball/531a1fd0e872b7c438a099fb7efe409e1d3620e9",
+                "reference": "531a1fd0e872b7c438a099fb7efe409e1d3620e9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^11.5"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Eophantasy\\Time\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Eophantasy\\Time\\Test\\": "tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ilya Sitnikov",
+                    "email": "sitnikovik@gmail.com"
+                }
+            ],
+            "description": "The library to work with date and time",
+            "support": {
+                "source": "https://github.com/eophantasy/time/tree/master",
+                "issues": "https://github.com/eophantasy/time/issues"
+            },
+            "time": "2025-01-01T10:39:53+00:00"
+        },
+        {
+            "name": "eophantasy/types",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/eophantasy/types.git",
+                "reference": "3932183a9b9362270f450e2d7d8c4e22ef241f50"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/eophantasy/types/zipball/3932183a9b9362270f450e2d7d8c4e22ef241f50",
+                "reference": "3932183a9b9362270f450e2d7d8c4e22ef241f50",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^11.5"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Eophantasy\\Types\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Eophantasy\\Types\\Test\\": "tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ilya Sitnikov",
+                    "email": "sitnikovik@gmail.com"
+                }
+            ],
+            "description": "The library contains immutable objects to work with scalar types.",
+            "support": {
+                "source": "https://github.com/eophantasy/types/tree/main",
+                "issues": "https://github.com/eophantasy/types/issues"
+            },
+            "time": "2024-12-31T18:27:43+00:00"
+        }
+    ],
     "packages-dev": [
         {
             "name": "myclabs/deep-copy",
@@ -1715,7 +1861,10 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {},
+    "stability-flags": {
+        "eophantasy/io": 20,
+        "eophantasy/time": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
